@@ -1,4 +1,4 @@
-﻿namespace BLL.IService
+﻿namespace UtilityLibrary
 {
     public class Class1
     {
