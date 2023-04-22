@@ -24,19 +24,26 @@ namespace BLL.IServiceImpl
             return _mapper.Map<List<SystemUserDto>>(result);
         }
 
-        public Task<bool> InsertUserInfo(SystemUserDto info)
+        public async Task<bool> InsertUserInfo(SystemUserDto info)
         {
-            throw new NotImplementedException();
+            return  await base.InsertAsync(_mapper.Map<SystemUserDao>(info));
         }
 
-        public Task<bool> UpdateUserInfo(SystemUserDto info)
+        public async  Task<bool> UpdateUserInfo(SystemUserDto info)
         {
-            throw new NotImplementedException();
+            return await base.UpdateAsync(m=> new SystemUserDao() 
+            {
+                UpdateDate = DateTime.Now,
+                UserName = info.UserName,
+                UserPassword = info.UserPassword,
+            },s=>s.Id==info.Id);
         }
 
-        public Task<bool> DeleteUserInfo(SystemUserDto info)
+        public  async Task<bool> DeleteUserInfo(SystemUserDto info)
         {
-            throw new NotImplementedException();
+            return await base.DeleteByIdAsync(info.Id);
         }
+
+   
     }
 }

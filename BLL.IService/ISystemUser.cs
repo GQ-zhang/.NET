@@ -9,7 +9,7 @@ namespace BLL.IService
 {
     public interface ISystemUser
     {
-        Task<SystemUserDto> SearchUserInfo();
+        Task<List<SystemUserDto>> SearchUserInfo();
 
         Task<bool> InsertUserInfo(SystemUserDto info);
 
