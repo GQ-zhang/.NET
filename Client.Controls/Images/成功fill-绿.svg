@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>成功fill-绿</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-362.000000, -133.000000)" fill="#15B565">
+            <g id="1.Icon/通用/状态正确fill" transform="translate(362.000000, 133.000000)">
+                <path d="M8,0 C12.4182344,0 16,3.58176562 16,8 C16,12.4182344 12.4182344,16 8,16 C3.58176563,16 7.10542736e-15,12.4182344 7.10542736e-15,8 C7.10542736e-15,3.58176563 3.58176563,0 8,0 Z M12.445193,4 L6.21910253,9.68449426 L3.56859489,7.561417 L3,8.48633948 L6.21908686,11.9996318 L6.21910253,12 L13,4.47931801 L12.445193,4 Z" id="形状"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,202 @@
+﻿<UserControl
+    x:Class="PrismTest.Views.Login.LoginContentView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:hc="https://handyorg.github.io/handycontrol"
+    xmlns:local="clr-namespace:PrismTest.Views.Login"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
+    d:DesignHeight="700"
+    d:DesignWidth="500"
+    Background="Transparent"
+    mc:Ignorable="d">
+    <b:Interaction.Triggers>
+        <b:EventTrigger EventName="Loaded">
+            <prism:InvokeCommandAction Command="{Binding LoadedCommand}" TriggerParameterPath="Source" />
+        </b:EventTrigger>
+    </b:Interaction.Triggers>
+    <Border
+        Margin="10"
+        Background="#FFFFFF"
+        CornerRadius="12">
+        <!--相对布局，可设置位置-->
+        <Canvas>
+            <Image Margin="0,-1,0,0" Source="pack://application:,,,/Client.Controls;component/Images/bg.png">
+                <Image.Clip>
+                    <RectangleGeometry
+                        RadiusX="16"
+                        RadiusY="16"
+                        Rect="0,0,480,680" />
+                </Image.Clip>
+            </Image>
+            <StackPanel
+                Canvas.Left="94"
+                Canvas.Top="100"
+                Orientation="Horizontal">
+                <TextBlock
+                    Margin="8,0,0,0"
+                    VerticalAlignment="Center"
+                    FontSize="20"
+                    FontWeight="Medium"
+                    Foreground="#FFFFFF"
+                    Text="公司名称:12345678899999">
+                    <TextBlock.Effect>
+                        <DropShadowEffect
+                            BlurRadius="8"
+                            Direction="0"
+                            Opacity="0.28"
+                            ShadowDepth="0"
+                            Color="#000000" />
+                    </TextBlock.Effect>
+                </TextBlock>
+            </StackPanel>
+            <hc:Divider
+                Width="292"
+                Margin="94,134,0,0"
+                LineStrokeThickness="1"
+                Opacity="0.3" />
+            <TextBlock
+                Canvas.Left="156"
+                Canvas.Top="145"
+                FontSize="28"
+                FontWeight="Bold"
+                Foreground="#FFFFFF"
+                Text="XXX系统" />
+            <StackPanel
+                Canvas.Left="408"
+                Margin="0,18,0,0"
+                VerticalAlignment="Top"
+                Orientation="Horizontal">
+                <Button
+                    Command="{Binding WindowMinCommand}"
+                    Cursor="Hand"
+                    Style="{StaticResource ButtonCustom}">
+                    <Image
+                        Width="12"
+                        Height="12"
+                        VerticalAlignment="Center"
+                        Source="pack://application:,,,/Client.Controls;component/Images/min_white.png" />
+                </Button>
+                <Button
+                    Margin="16,0,0,0"
+                    Command="{Binding WindowCloseCommand}"
+                    Cursor="Hand"
+                    Style="{StaticResource ButtonCustom}">
+                    <Image
+                        Width="12"
+                        Height="12"
+                        VerticalAlignment="Center"
+                        Source="pack://application:,,,/Client.Controls;component/Images/close_white.png" />
+                </Button>
+            </StackPanel>
+            <StackPanel Canvas.Left="80" Canvas.Top="297">
+                <Border
+                    Width="320"
+                    Height="40"
+                    BorderBrush="#D1D3D8"
+                    BorderThickness="1"
+                    CornerRadius="2">
+                    <StackPanel Orientation="Horizontal">
+                        <Image
+                            Width="16"
+                            Height="16"
+                            Margin="13,0,0,0"
+                            VerticalAlignment="Center"
+                            Source="pack://application:,,,/Client.Controls;component/Images/ps.png" />
+                        <hc:ComboBox
+                            Width="280"
+                            Height="40"
+                            VerticalAlignment="Center"
+                            BorderThickness="0"
+                            DisplayMemberPath="UserName"
+                            FontSize="14"
+                            IsEditable="False"
+                            ItemsSource="{Binding Users}"
+                            SelectedValue="{Binding LoginUser.Account, UpdateSourceTrigger=PropertyChanged}"
+                            SelectedValuePath="Account" />
+                    </StackPanel>
+                </Border>
+                <Border
+                    Width="320"
+                    Height="40"
+                    Margin="0,20,0,0"
+                    BorderBrush="#D1D3D8"
+                    BorderThickness="1"
+                    CornerRadius="2">
+                    <StackPanel Orientation="Horizontal">
+                        <Image
+                            Width="16"
+                            Height="16"
+                            Margin="13,0,0,0"
+                            VerticalAlignment="Center"
+                            Source="pack://application:,,,/Client.Controls;component/Images/pwdLg.png" />
+                        <hc:PasswordBox
+                            x:Name="PasswordBox"
+                            Width="280"
+                            Height=" 40"
+                            hc:InfoElement.Placeholder="请输入密码"
+                            BorderThickness="0"
+                            FontSize="14"
+                            MaxLength="20"
+                            ShowClearButton=" False"
+                            ShowEyeButton="True" />
+                    </StackPanel>
+                </Border>
+
+                <Button
+                    Width="320"
+                    Height="40"
+                    Margin="0,24,0,0"
+                    Background="#2B53EC"
+                    Command="{Binding LoginCommand}"
+                    CommandParameter="{Binding ElementName=PasswordBox}"
+                    Content="登录"
+                    Cursor="Hand"
+                    FontSize="14"
+                    Foreground="White"
+                    IsDefault="True"
+                    Style="{StaticResource ButtonPrimary}" />
+                <CheckBox
+                    Margin="0,21,0,0"
+                    Content="记住密码"
+                    FontSize="14"
+                    Foreground="#434550"
+                    IsChecked="{Binding IsRemember}"
+                    Visibility="Collapsed" />
+                <Border
+                    Width="146"
+                    Height="24"
+                    Margin="0,47,0,0"
+                    Background="#F1F1F1"
+                    CornerRadius="12">
+                    <StackPanel Orientation="Horizontal">
+                        <svgc:SvgViewbox
+                            Width="16"
+                            Height="16"
+                            Margin="13,0,0,0"
+                            VerticalAlignment="Center"
+                            Source="pack://application:,,,/Client.Controls;component/Images/联系电话.svg" />
+                        <TextBlock
+                            Margin="6,0,0,0"
+                            VerticalAlignment="Center"
+                            FontSize="14"
+                            FontWeight="Medium"
+                            Foreground="#434550"
+                            Text="400-123-3456" />
+                    </StackPanel>
+                </Border>
+                <TextBlock
+                    Margin="0,9,0,0"
+                    HorizontalAlignment="Center"
+                    FontSize="12"
+                    Foreground="#434550"
+                    Text="Copyright ©2014-2022  XXX  All Rights Reserved" />
+            </StackPanel>
+        </Canvas>
+
+    </Border>
+</UserControl>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="28px" viewBox="0 0 68 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>开关-bg开</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#9EA4B7" offset="0%"></stop>
+            <stop stop-color="#E1E3EC" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="68" height="28" rx="14"></rect>
+        <filter x="-3.7%" y="-8.9%" width="107.4%" height="117.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.615686275   0 0 0 0 0.666666667   0 0 0 0 0.737254902  0 0 0 1 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner2"></feGaussianBlur>
+            <feOffset dx="0" dy="-2" in="shadowBlurInner2" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.596240811 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#2CEF5A" offset="0%"></stop>
+            <stop stop-color="#0E762F" offset="67.1798601%"></stop>
+            <stop stop-color="#2D854E" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="3" y="3" width="62" height="22" rx="11"></rect>
+        <filter x="-1.6%" y="-4.5%" width="103.2%" height="109.1%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="1" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0199715006   0 0 0 0 0.359798044   0 0 0 0 0.0520750742  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="IC卡管理/制卡-关联计划" transform="translate(-520.000000, -146.000000)">
+            <g id="Stacked-Group" transform="translate(180.000000, 144.000000)">
+                <g id="开关-bg开" transform="translate(340.000000, 2.000000)">
+                    <g id="矩形">
+                        <use fill="#E5E8F0" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        <rect stroke="url(#linearGradient-1)" stroke-width="1" stroke-linejoin="square" x="0.5" y="0.5" width="67" height="27" rx="13.5"></rect>
+                    </g>
+                    <g id="矩形">
+                        <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <rect stroke-opacity="0.219422667" stroke="#053A17" stroke-width="0.5" stroke-linejoin="square" x="3.25" y="3.25" width="61.5" height="21.5" rx="10.75"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

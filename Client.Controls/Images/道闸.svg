@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="108px" viewBox="0 0 12 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>道闸</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="4" height="76"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="称重管理" transform="translate(-1156.000000, -92.000000)">
+            <g id="编组-13" transform="translate(746.000000, 80.000000)">
+                <g id="道闸" transform="translate(410.000000, 12.000000)">
+                    <g id="形状结合" transform="translate(4.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="蒙版" fill="#FFBC00" xlink:href="#path-1"></use>
+                        <path d="M0,52 L4,54 L4,62 L0,60 L0,52 Z M0,39 L4,41 L4,49 L0,47 L0,39 Z M0,26 L4,28 L4,36 L0,34 L0,26 Z M0,13 L4,15 L4,23 L0,21 L0,13 Z M0,0 L4,2 L4,10 L0,8 L0,0 Z M0,65 L4,67 L4,75 L0,73 L0,65 Z" fill="#545454" mask="url(#mask-2)"></path>
+                    </g>
+                    <g id="编组-5" transform="translate(0.000000, 76.000000)">
+                        <rect id="矩形" fill="#D7DEEB" x="0" y="0" width="12" height="32"></rect>
+                        <rect id="矩形" fill="#234182" x="2" y="2" width="8" height="28"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

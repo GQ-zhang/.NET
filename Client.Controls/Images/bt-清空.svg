@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="146px" height="56px" viewBox="0 0 146 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bt-清空</title>
+    <defs>
+        <linearGradient x1="47.6365809%" y1="0%" x2="47.6365809%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF9D3A" offset="0%"></stop>
+            <stop stop-color="#E4621E" offset="100%"></stop>
+        </linearGradient>
+        <path d="M20,0 L130,0 L130,0 L120,40 L20,40 C8.954305,40 1.3527075e-15,31.045695 0,20 C-1.3527075e-15,8.954305 8.954305,2.02906125e-15 20,0 Z" id="path-2"></path>
+        <filter x="-10.0%" y="-27.5%" width="120.0%" height="165.0%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.880820786   0 0 0 0 0.397025137   0 0 0 0 0.236581725  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="称重管理" transform="translate(-584.000000, -416.000000)">
+            <g id="bt-清空" transform="translate(592.000000, 422.000000)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <g id="蒙版">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <path d="M8.4,42.75 C8.4,42.75 8.2,42.75 8.4,42.75 L4.4,40.55 L4.4,40.35 C4.8,39.55 8.2,32.35 7.8,32.55 C7.4,32.95 5,35.55 3.2,38.15 L2.2,39.55 C2.2,39.55 -1.8,36.75 -3.2,35.15 C-2.4,33.95 2,28.35 2,28.35 L-5.4,32.75 C-5.8,32.35 -8.2,29.75 -9,28.35 C-8.4,27.75 -4.4,24.35 -4.4,24.35 L-10,26.35 L-12,22.55 L-12,22.35 C-11,22.15 -2.8,20.55 1,17.75 L1.4,17.75 L12.8,29.15 C12.8,29.15 13,29.35 12.8,29.55 C12.4,30.55 9.2,35.75 8.4,42.75 Z M23.2,11.55 L16,18.75 L16,18.95 C17.6,21.75 17.6,24.95 15.2,27.35 L15,27.35 L3.6,15.95 L3.6,15.75 C6,13.35 9.2,13.35 12,14.95 L12.2,14.95 L19.4,7.75 C20.4,6.75 22.2,6.75 23.2,7.75 C24.2,8.75 24.2,10.55 23.2,11.55 L23.2,11.55 Z" id="形状" fill="#FFFFFF" fill-rule="nonzero" opacity="0.149999991" style="mix-blend-mode: overlay;" mask="url(#mask-3)" transform="translate(5.975000, 24.875000) scale(-1, 1) rotate(-30.000000) translate(-5.975000, -24.875000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

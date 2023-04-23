@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 2</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="登录" transform="translate(-80.000000, -421.000000)">
+            <g id="编组-2" transform="translate(80.000000, 421.000000)">
+                <rect id="矩形" fill="#2B53EC" x="0" y="0" width="16" height="16" rx="1"></rect>
+                <g id="Icon/通用/对勾" transform="translate(1.000000, 1.000000)" fill="#FFFFFF">
+                    <polygon id="路径" points="5.44170101 10.4996779 2.625 7.42554705 3.12252053 6.61623988 5.44171472 8.47393248 10.8895439 3.5 11.375 3.91940326 5.44171472 10.5"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ic-撤回蓝</title>
+    <g id="二期" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="切图" transform="translate(-459.000000, -228.000000)" fill="#2B53EC">
+            <g id="ic-撤回蓝" transform="translate(459.000000, 228.000000)">
+                <path d="M16,0 L16,3.6 L14.3107378,3.6 L14.3107378,1.60328582 L1.63197221,1.60328582 L1.63197221,14.3546518 L5.66153846,14.3546518 L5.66153846,16 L0,16 L0,0 L16,0 Z M12.3076923,6.62857143 L12.3076923,8 L16,8 L16,16 L7.38461538,16 L7.38461538,14.3546518 L14.3107378,14.3546518 L14.3107378,9.91572191 L6.76923077,9.91572191 L12.3076923,6.62857143 Z" id="形状结合"></path>
+            </g>
+        </g>
+    </g>
+</svg>

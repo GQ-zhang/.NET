@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="32px" viewBox="0 0 112 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>称重1-未开始</title>
+    <defs>
+        <polygon id="path-1" points="165 340 267.909091 340 277 356 267.909091 372 165 372"></polygon>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-165.000000, -340.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="称重1-未开始" fill="#DADFE8" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

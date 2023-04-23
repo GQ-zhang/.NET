@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="212px" height="100px" viewBox="0 0 212 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>矩形</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="212" height="100" rx="4"></rect>
+        <linearGradient x1="45.7822861%" y1="21.8711201%" x2="45.7822861%" y2="74.5317951%" id="linearGradient-3">
+            <stop stop-color="#425EC6" offset="0%"></stop>
+            <stop stop-color="#324DB5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="手动开闸-查看监控" transform="translate(-523.000000, -80.000000)">
+            <g id="矩形" transform="translate(523.000000, 80.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="蒙版" fill="#324DB5" xlink:href="#path-1"></use>
+                <rect fill="url(#linearGradient-3)" mask="url(#mask-2)" transform="translate(150.663721, 13.815582) rotate(-59.000000) translate(-150.663721, -13.815582) " x="91.1637209" y="-118.184418" width="119" height="264"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

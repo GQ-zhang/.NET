@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="22px" viewBox="0 0 38 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>开关-按钮</title>
+    <defs>
+        <linearGradient x1="44.8097843%" y1="46.6401429%" x2="50%" y2="66.7590028%" id="linearGradient-1">
+            <stop stop-color="#EFF2FA" offset="0%"></stop>
+            <stop stop-color="#8E9DB4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="18.6151761%" y1="30.6350387%" x2="89.5061728%" y2="71.8091005%" id="linearGradient-2">
+            <stop stop-color="#9CA3BC" offset="0%"></stop>
+            <stop stop-color="#E4EAF4" offset="100%"></stop>
+        </linearGradient>
+        <path d="M28,20 C32.418278,20 36,15.9705627 36,11 C36,6.02943725 32.418278,2 28,2 C23.581722,2 20,5.4400097 20,11 C20,16.5599903 23.581722,20 28,20 Z" id="path-3"></path>
+        <filter x="-12.5%" y="-11.1%" width="125.0%" height="122.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.478730135   0 0 0 0 0.536815684   0 0 0 0 0.62658426  0 0 0 0.242975195 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="25.2023769%" y1="15.3090107%" x2="77.5044414%" y2="87.2866194%" id="linearGradient-5">
+            <stop stop-color="#D0DBEB" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="IC卡管理/制卡-未关联计划" transform="translate(-523.000000, -149.000000)">
+            <g id="Stacked-Group-3" transform="translate(180.000000, 144.000000)">
+                <g id="Stacked-Group-4" transform="translate(340.000000, 2.000000)">
+                    <g id="开关-按钮" transform="translate(3.000000, 3.000000)">
+                        <rect id="矩形" fill="url(#linearGradient-1)" x="0" y="0" width="38" height="22" rx="11"></rect>
+                        <g id="椭圆形">
+                            <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        </g>
+                        <path d="M10,20 C14.418278,20 18,16.6117118 18,11 C18,5.38828816 14.418278,2 10,2 C5.581722,2 2,6.02943725 2,11 C2,15.9705627 5.581722,20 10,20 Z" id="椭圆形" fill="url(#linearGradient-5)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="120px" viewBox="0 0 12 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>红外-绿色</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="称重管理" transform="translate(-834.000000, -80.000000)">
+            <g id="编组-13" transform="translate(746.000000, 80.000000)">
+                <g id="红外-绿色" transform="translate(88.000000, 0.000000)">
+                    <rect id="矩形" fill="#15B565" x="4" y="8" width="4" height="100"></rect>
+                    <g id="模型-红外柱">
+                        <rect id="矩形" fill="#D7DEEB" x="0" y="0" width="12" height="12"></rect>
+                        <rect id="矩形" fill="#234182" x="2" y="2" width="8" height="8"></rect>
+                    </g>
+                    <g id="模型-红外柱" transform="translate(0.000000, 108.000000)">
+                        <rect id="矩形" fill="#D7DEEB" x="0" y="0" width="12" height="12"></rect>
+                        <rect id="矩形" fill="#234182" x="2" y="2" width="8" height="8"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

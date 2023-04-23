@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="26px" viewBox="0 0 23 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>形状结合</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#A6B8FF" offset="99.9149776%"></stop>
+        </linearGradient>
+        <path d="M50.9091532,133 C52.8671554,133 54.4546487,134.587349 54.4546487,136.545496 L54.4546487,155.454649 C54.4546487,157.412651 52.8671554,159 50.9091532,159 L35.5454955,159 C33.5873491,159 32,157.412651 32,155.454649 L32,136.545496 C32,134.587349 33.5873491,133 35.5454955,133 L50.9091532,133 Z M50.0227162,150.727297 L36.4317883,150.727297 C35.9423689,150.727297 35.5454955,151.124135 35.5454955,151.613734 C35.5454955,152.103154 35.9423689,152.500027 36.4317883,152.500027 L36.4317883,152.500027 L50.0227162,152.500027 C50.5122799,152.500027 50.9091532,152.103154 50.9091532,151.613734 C50.9091532,151.124135 50.5122799,150.727297 50.0227162,150.727297 L50.0227162,150.727297 Z M50.0227162,144.818198 L36.4317883,144.818198 C35.9423689,144.818198 35.5454955,145.215072 35.5454955,145.704635 C35.5454955,146.194055 35.9423689,146.590928 36.4317883,146.590928 L36.4317883,146.590928 L50.0227162,146.590928 C50.5122799,146.590928 50.9091532,146.194055 50.9091532,145.704635 C50.9091532,145.215072 50.5122799,144.818198 50.0227162,144.818198 L50.0227162,144.818198 Z M44.1136171,138.909099 L36.4317883,138.909099 C35.9423689,138.909099 35.5454955,139.305972 35.5454955,139.795392 C35.5454955,140.284956 35.9423689,140.681829 36.4317883,140.681829 L36.4317883,140.681829 L44.1136171,140.681829 C44.6031808,140.681829 45.0000541,140.284956 45.0000541,139.795392 C45.0000541,139.305972 44.6031808,138.909099 44.1136171,138.909099 L44.1136171,138.909099 Z" id="path-2"></path>
+        <filter x="-4.5%" y="-3.8%" width="108.9%" height="107.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="形状结合" transform="translate(-32.000000, -133.000000)">
+            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+        </g>
+    </g>
+</svg>

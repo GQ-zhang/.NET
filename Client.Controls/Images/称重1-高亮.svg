@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="112px" height="32px" viewBox="0 0 112 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>称重1-高亮</title>
+    <defs>
+        <polygon id="path-1" points="33 340 135.909091 340 145 356 135.909091 372 33 372"></polygon>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-33.000000, -340.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="称重1-高亮" fill="#2B53EC" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="26px" viewBox="0 0 28 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>jiankong3</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#A6B8FF" offset="99.9149776%"></stop>
+        </linearGradient>
+        <path d="M36.1665587,303.601927 L36.1716858,303.593196 L32.2272256,299.374868 C31.6379146,298.744692 31.602228,297.777042 32.1431616,297.104987 L33.0693887,295.954488 L48.6628572,311.869593 L46.8435008,312.981004 C46.2926175,313.31792 45.6002062,313.320712 45.046734,312.987959 L36.1665587,303.601927 Z M35.7108567,304.374646 L38.2206954,307.027434 L36.606575,309.759921 C36.3616928,310.175977 35.9539621,310.470607 35.4820157,310.57254 C35.3591178,310.601119 35.2307882,310.615993 35.0991082,310.615993 L32.465407,310.615993 L32.465407,313.266954 C32.4656101,313.886063 32.1352425,314.458115 31.5992329,314.767872 C31.063071,315.077376 30.402336,315.077376 29.8663264,314.767872 C29.3301645,314.458115 29,313.886063 29,313.266954 L29,306.336191 C29,305.716929 29.3301645,305.144827 29.8663264,304.835323 C30.402336,304.525768 31.063071,304.525768 31.5992329,304.835323 C32.1352425,305.144827 32.4656101,305.716929 32.465407,306.336191 L32.465407,307.193024 L34.0465821,307.193024 L35.7098922,304.374646 L35.7108567,304.374646 Z M34.1574491,294.602154 L38.1443474,289.64659 C38.4515161,289.26485 38.9055938,289.031085 39.3945966,289.002912 C39.8835486,288.974535 40.3616373,289.154592 40.710635,289.498463 L56.184759,304.748822 C56.5644685,305.123202 56.7510743,305.651495 56.6900061,306.181312 C56.6290901,306.710976 56.3277085,307.183278 55.8728186,307.461511 L50.1720499,310.945955 L34.1574491,294.602154 Z" id="path-2"></path>
+        <filter x="-3.6%" y="-3.8%" width="107.2%" height="107.7%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="jiankong3" transform="translate(-29.000000, -289.000000)">
+            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+        </g>
+    </g>
+</svg>

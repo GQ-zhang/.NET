@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>关闭</title>
+    <defs>
+        <circle id="path-1" cx="16" cy="16" r="16"></circle>
+        <filter x="-21.9%" y="-15.6%" width="143.8%" height="143.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.96091229   0 0 0 0 0.305928024   0 0 0 0 0.305928024  0 0 0 0.4 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-111.000000, -23.000000)">
+            <g id="关闭" transform="translate(115.000000, 25.000000)">
+                <g id="椭圆形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#F54E4E" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="1.Icon/通用/关闭" transform="translate(8.000000, 8.000000)" fill="#FFFFFF">
+                    <polygon id="路径" points="7.00014142 8 3 3.99985857 3.99985857 3 8 7.00014142 12.0001414 3 13 3.99985857 8.99915146 8 12.9992929 12.0001414 11.9994343 13 8 8.99915146 3.99985857 13 3 12.0001414"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
