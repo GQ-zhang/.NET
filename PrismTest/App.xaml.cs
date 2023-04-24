@@ -118,6 +118,7 @@ namespace PrismTest
         /// <exception cref="NotImplementedException"></exception>
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
+            //注册导航
             containerRegistry.RegisterForNavigation<LoginContentView>();
             RegisterAssemblyTypes(containerRegistry);
         }

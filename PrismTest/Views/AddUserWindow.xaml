@@ -10,6 +10,7 @@
     Title="AddUserWindow"
     Width="500"
     Height="380"
+    AllowsTransparency="True"
     WindowStartupLocation="CenterScreen"
     WindowStyle="None"
     mc:Ignorable="d">
@@ -49,7 +50,7 @@
                             Height="16"
                             VerticalAlignment="Center"
                             Source="pack://application:,,,/Client.Controls;component/Images/关闭.svg" />
-                        <!--  F:\.NET学习\WPF\PrismTest\Client.Controls\Images\关闭.svg  -->
+
                     </Button>
                 </Grid>
             </Border>

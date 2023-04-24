@@ -77,6 +77,21 @@ namespace PrismTest.ViewModels.Login
 
         private async void ExcuteLoginCommand(PasswordBox passwordBox)
         {
+            if (string.IsNullOrWhiteSpace(UserAccount))
+            {
+                HandyControl.Controls.MessageBox.Show($"请选择用户名", "提示", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(passwordBox.Password))
+            {
+                HandyControl.Controls.MessageBox.Show($"请输入密码", "提示", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            if (passwordBox.Password.Length<6)
+            {
+                HandyControl.Controls.MessageBox.Show($"密码长度小于6，请检查密码", "提示", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
             var result = await _container.Resolve<ISystemUser>().SearchUserInfo();
             var userInfo = result.FirstOrDefault(it =>
                 it.UserAccount == UserAccount && Encryption.Decrypt(it.UserPassword) == passwordBox.Password);
