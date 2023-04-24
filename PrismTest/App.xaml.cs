@@ -136,7 +136,7 @@ namespace PrismTest
             }
             else
             {
-                return Container.Resolve<MainWindow>();
+                return Container.Resolve<AddUserWindow>();
             }
 
             //throw new NotImplementedException();
