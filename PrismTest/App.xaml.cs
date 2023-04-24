@@ -177,6 +177,7 @@ namespace PrismTest
 
         protected override async void OnStartup(StartupEventArgs e)
         {
+            LogHelper.Instance.Info($"启动程序");
             AppMutex = new Mutex(true, "TestAppName", out var createdNew);
             if (!createdNew)
             {

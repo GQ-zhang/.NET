@@ -14,7 +14,7 @@ namespace PrismTest
         public MapperProfiles()
         {
             CreateMap<SystemUserDto, SystemUserDao>();
-            CreateMap<SystemUserDao, SystemUserDto>();
+            CreateMap<SystemUserDao, SystemUserDto>().ForMember(s=>s.UserAccount,m=>m.MapFrom(d=>d.UserAccount));
         }
     }
 }

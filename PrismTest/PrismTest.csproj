@@ -8,6 +8,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Nlog.Config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Nlog.Config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BLL.IServiceImpl\BLL.IServiceImpl.csproj" />
     <ProjectReference Include="..\Client.Controls\Client.Controls.csproj" />
     <ProjectReference Include="..\Dao.CodeFirst\Dao.CodeFirst.csproj" />
