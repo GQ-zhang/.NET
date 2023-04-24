@@ -224,9 +224,18 @@ namespace PrismTest
             base.OnStartup(e);
         }
 
+     
         protected override void OnExit(ExitEventArgs e)
         {
             base.OnExit(e);
+
+            if (AppConfiguration.ReStart)
+            {
+                var location = Assembly.GetExecutingAssembly().Location;
+                location = location.Replace(".dll", ".exe");
+                Process.Start(location);
+            }
+        
         }
     }
 }

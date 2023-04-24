@@ -89,7 +89,7 @@ namespace PrismTest.Views
             if (result)
             {
                 HandyControl.Controls.MessageBox.Show("添加成功，跳转至登录页面", "提示", MessageBoxButton.OK, MessageBoxImage.Information);
-
+                AppConfiguration.ReStart=true;
                 Application.Current.Shutdown();
             }
             else

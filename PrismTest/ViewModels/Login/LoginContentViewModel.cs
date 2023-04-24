@@ -117,6 +117,16 @@ namespace PrismTest.ViewModels.Login
         {
             Window.GetWindow(_loginContentView)?.DragMove();
         });
+
+
+        public DelegateCommand WindowMinCommand => new DelegateCommand(() =>
+        {
+            Window.GetWindow(_loginContentView).WindowState=WindowState.Minimized;
+        });
+
+        public DelegateCommand WindowCloseCommand => new DelegateCommand(() => { System.Environment.Exit(0); });
+
+
         private async void GetUser()
         {
             var result=await _container.Resolve<ISystemUser>().SearchUserInfo();
