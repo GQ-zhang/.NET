@@ -3,23 +3,15 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
+  
     <UseWPF>true</UseWPF>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="关闭.svg" />
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\BLL.IServiceImpl\BLL.IServiceImpl.csproj" />
     <ProjectReference Include="..\Client.Controls\Client.Controls.csproj" />
     <ProjectReference Include="..\Dao.CodeFirst\Dao.CodeFirst.csproj" />
     <ProjectReference Include="..\UtilityLibrary\UtilityLibrary.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="关闭.svg" />
   </ItemGroup>
 
 </Project>

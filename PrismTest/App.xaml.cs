@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Diagnostics;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -15,6 +16,7 @@ using BLL.IService;
 using Dao.CodeFirst;
 using Prism.Ioc;
 using Prism.Modularity;
+using Prism.Mvvm;
 using Prism.Unity;
 using PrismTest.Views;
 using PrismTest.Views.Login;
@@ -69,6 +71,25 @@ namespace PrismTest
             base.ConfigureModuleCatalog(moduleCatalog);
         }
 
+        /// <summary>
+        /// 使用prism   自动匹配View跟Model的规则 
+        /// </summary>
+        protected override void ConfigureViewModelLocator()
+        {
+            base.ConfigureViewModelLocator();
+            ViewModelLocationProvider.SetDefaultViewTypeToViewModelTypeResolver(viewType =>
+            {
+                var viewName = viewType.FullName;
+                viewName = viewName.Replace(".Views.", ".ViewModels.");
+                var suffix = viewName.EndsWith("View") ? "Model" : "ViewModel";
+                var viewModelName = string.Format(CultureInfo.InvariantCulture, "{0}{1}", viewName, suffix);
+
+                var assembly = ReflectionExtensions.GetTypeInfo(viewType).Assembly;
+                var type = assembly.GetType(viewModelName, true);
+                return type;
+            });
+        }
+
         private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
         {
             StringBuilder sbEx = new StringBuilder();
@@ -115,7 +136,7 @@ namespace PrismTest
             }
             else
             {
-                return Container.Resolve<AddUserWindow>();
+                return Container.Resolve<MainWindow>();
             }
 
             //throw new NotImplementedException();
